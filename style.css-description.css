@@ -1,150 +1,174 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-    background-image: url(image/bg.png);
-    background-size: cover;
-    background-position: center;
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(image/bg.png);
+  background-size: cover;
+  background-position: center;
 }
 
-section nav{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0 0 10px #089da1;
-    background: #fff;
-    position: fixed;
-    left: 0;
-    z-index: 100;
+section nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 10px #089da1;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  z-index: 100;
 }
 
-section nav .logo img{
-    width: 100px;
-    cursor: pointer;
-    margin: 8px 0;
+section nav .logo img {
+  width: 100px;
+  cursor: pointer;
+  margin: 8px 0;
 }
 
-section nav ul{
-    list-style: none;
+section nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-section nav li{
-    display: inline-block;
-    padding: 0 10px;
+section nav li {
+  padding: 0 10px;
 }
 
-section nav li a{
-    text-decoration: none;
-    color: #000;
+section nav li a {
+  text-decoration: none;
+  color: #000;
 }
 
-section nav li a:hover{
-    color: #089da1;
+section nav li a:hover {
+  color: #089da1;
 }
 
-section nav .social_icon i{
-    margin: 0 5px;
-    font-size: 18px;
+section nav .social_icon i {
+  margin: 0 5px;
+  font-size: 18px;
 }
 
-section nav .social_icon i:hover{
-    color: #089da1;
-    cursor: pointer;
+section nav .social_icon i:hover {
+  color: #089da1;
+  cursor: pointer;
 }
 
-section .main{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position: relative;
-    top: 10%;
+section .main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px 20px;
 }
 
-section .main h1{
-    position: relative;
-    font-size: 55px;
-    top: 80px;
-    left: 25px;
+section .main h1 {
+  font-size: 55px;
+  margin-bottom: 20px;
 }
 
-section .main h1 span{
-    color: #089da1;
+section .main h1 span {
+  color: #089da1;
 }
 
-section .main p{
-    width: 650px;
-    text-align: justify;
-    line-height: 22px;
-    position: relative;
-    top: 125px;
-    left: 25px;
+section .main p {
+  max-width: 650px;
+  text-align: justify;
+  line-height: 22px;
+  margin-bottom: 20px;
 }
 
-section .main .main_tag .main_btn{
-    background: #089da1;
-    padding: 10px 20px;
-    position: relative;
-    top: 200px;
-    left: 25px;
-    color: #fff;
-    text-decoration: none;
+section .main .main_tag .main_btn {
+  background: #089da1;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
 }
 
-section .main .main_img img{
-    width: 780px;
-    position: relative;
-    top: 90px;
-    left: 20px;
+section .main .main_img img {
+  width: 100%;
+  max-width: 400px;
 }
-
 
 .book-description {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 100% 50%;
-    background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px 20px;
+  background: #fff;
 }
 
 .book-description .book-image img {
-    width: 300%;
-    border-radius: 10%;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .book-description .book-text {
-    max-width: 600px;
+  max-width: 600px;
+  margin-top: 20px;
 }
 
 .book-description .book-text h2 {
-    font-size: 32%;
-    color: #089da1;
+  font-size: 32px;
+  color: #089da1;
 }
 
 .book-description .book-text h4 {
-    font-size: 18%;
-    margin-bottom: 15%;
-    color: #333;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
 }
 
 .book-description .book-text p {
-    line-height: 1.6;
-    text-align: justify;
-    margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  body {
-    font-size: 16px;
+  section nav {
+    flex-direction: column;
+    padding: 10px;
   }
-  .menu {
-    display: none;
+
+  section nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section .main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  section .main h1 {
+    font-size: 36px;
+  }
+
+  section .main p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .book-description {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .book-description .book-text {
+    padding: 0 10px;
   }
 }
 

@@ -109,13 +109,13 @@ section .main .main_img img{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 100px 50px;
+    padding: 100% 50%;
     background: #fff;
 }
 
 .book-description .book-image img {
-    width: 300px;
-    border-radius: 10px;
+    width: 300%;
+    border-radius: 10%;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
@@ -124,13 +124,13 @@ section .main .main_img img{
 }
 
 .book-description .book-text h2 {
-    font-size: 32px;
+    font-size: 32%;
     color: #089da1;
 }
 
 .book-description .book-text h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 18%;
+    margin-bottom: 15%;
     color: #333;
 }
 
@@ -147,6 +147,7 @@ section .main .main_img img{
     display: none;
   }
 }
+
 
 
 

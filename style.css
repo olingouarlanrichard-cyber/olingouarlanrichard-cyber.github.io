@@ -98,7 +98,7 @@ section .main .main_tag .main_btn{
 }
 
 section .main .main_img img{
-    width: 780px;
+    width: 780%;
     position: relative;
     top: 90px;
     left: 20px;
@@ -125,10 +125,10 @@ section .main .main_img img{
 
 .services .services_box .services_card{
     text-align: center;
-    width: 310px;
+    width: 310%;
     height: auto;
     box-shadow: 0 0 8px #089da1;
-    padding: 15px 10px;
+    padding: 15% 10%;
 }
 
 .services .services_box .services_card i{
@@ -150,7 +150,7 @@ section .main .main_img img{
 .about{
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -161,9 +161,9 @@ section .main .main_img img{
 }
 
 .about .about_tag h1{
-    font-size: 50px;
+    font-size: 50%;
     position: relative;
-    bottom: 35px;
+    bottom: 35%;
 }
 
 .about .about_tag p{
@@ -174,7 +174,7 @@ section .main .main_img img{
 }
 
 .about .about_tag .about_btn{
-    padding: 10px 20px;
+    padding: 10% 20%;
     background: #089da1;
     color: #fff;
     text-decoration: none;
@@ -321,10 +321,10 @@ section .main .main_img img{
 }
 
 .arrivals .arrivals_box .arrivals_card{
-    width: 250px;
-    height: 340px;
+    width: 250%;
+    height: 340%;
     text-align: center;
-    padding: 5px;
+    padding: 5%;
     border: 1px solid #919191;
     margin: auto 20px;
 }
@@ -334,8 +334,8 @@ section .main .main_img img{
 }
 
 .arrivals .arrivals_box .arrivals_card .arrivals_image{
-    width: 150px;
-    height: 220px;
+    width: 150%;
+    height: 220%;
     margin: 0 auto;
     cursor: pointer;
     box-shadow: 0 0 8px rgba(0,0,0,0.5);
@@ -398,8 +398,8 @@ section .main .main_img img{
 }
 
 .reviews .review_box .review_card{
-    width: 400px;
-    height: 320px;
+    width: 400%;
+    height: 320vh;
     box-shadow: 0 0 8px #089da1;
     padding: 15px;
     margin: 0 12px;
@@ -614,4 +614,5 @@ footer .end{
 footer .end span{
     color: #089da1;
     margin-left: 10px;
+
 }
